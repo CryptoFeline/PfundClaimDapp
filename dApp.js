@@ -90,7 +90,7 @@ async function stake() {
     const amountAuthorizedETH = ethers.utils.parseUnits(amountToStake.value,"ether")
 
     // Stake the token approved
-    const txResponse = await numberContract.connect(signer).stakeToken(amountAuthorizedETH, {gasLimit: 500000, nonce: undefined,})
+    const txResponse = await numberContract.connect(signer).stakeToken(amountAuthorizedETH, {gasLimit: 5000000, nonce: undefined,})
     await txResponse.wait()
   }
 
@@ -100,7 +100,7 @@ async function stake() {
     const numberContract = new ethers.Contract(contractAddress, untracerAbi, provider);
 
     // Stake the token approved
-    const txResponse = await numberContract.connect(signer).claimPrizeAndRestake({gasLimit: 500000, nonce: undefined,})
+    const txResponse = await numberContract.connect(signer).claimPrizeAndRestake({gasLimit: 5000000, nonce: undefined,})
     await txResponse.wait()
   }
 
@@ -110,7 +110,7 @@ async function stake() {
     const numberContract = new ethers.Contract(contractAddress, untracerAbi, provider);
 
     // Stake the token approved
-    const txResponse = await numberContract.connect(signer).claimRewardAndPrize({gasLimit: 500000, nonce: undefined,})
+    const txResponse = await numberContract.connect(signer).claimRewardAndPrize({gasLimit: 5000000, nonce: undefined,})
     await txResponse.wait()
   }
 
