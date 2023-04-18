@@ -1,4 +1,4 @@
-title = " Pepe's Staking dApp ";
+title = "Pepe's Staking dApp";
 position = 0;
 function scrolltitle() {
     document.title = title.substring(position, title.length) + title.substring(0, position); 
