@@ -38,8 +38,8 @@ let userAddress = ""
 let provider = new ethers.providers.Web3Provider(window.ethereum)
 
 // Address of the smart contract in ETH Chain
-const contractAddress = '0xC4BB249134ac03A2617547113dc23F94AaED3279' // STAKE CONTRACT              ====> GOERLI
-const tokenToStake = '0x0A02767A0019Fd8f3F0a02E076B2886E812E810c' // TOKEN CONTRACT               ====> GOERLI
+const contractAddress = '0xfBC6bE3A4aDd5f47F2d95B73A9dF8ff7D7f0eF2d' // STAKE CONTRACT              
+const tokenToStake = '0x9413FbA41C431B80Fb04E4932873e25bda72232E' // TOKEN CONTRACT               
 
 async function getPanelInfo() {
     const signer = provider.getSigner()
